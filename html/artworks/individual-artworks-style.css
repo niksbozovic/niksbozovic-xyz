@@ -1,0 +1,375 @@
+@font-face {
+  font-family: PPNeueMontrealMono-Light;
+  src: url('../../fonts/PPNeueMontrealMono-Light.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: PPNeueMontrealMono-Bold;
+  src: url('../../fonts/PPNeueMontrealMono-Bold.woff2') format('woff2');
+  font-weight: 800;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background: #101010;
+  height: 100%;
+  cursor: url('../../img/icons/cursor-green.png') 15 15, auto;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: line-through;
+  cursor: url('../../img/icons/cursor-green-hover.png') 15 15, auto;
+}
+
+.home {
+  height: fit-content;
+  position: fixed;
+  top: 3vh;
+  z-index: 100;
+  margin: auto;
+  width: 100%;
+}
+
+.home .home-text {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+
+.home .home-text p {
+  width: fit-content;
+  height: auto;
+  z-index: 0;
+  font-family: "PPNeueMontrealMono-Bold";
+  color: #E75757;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  line-height: 0rem;
+  font-feature-settings: normal;
+  position: relative;
+}
+
+.home a:hover {
+  text-decoration: line-through;
+  text-decoration-color: #E75757;
+  text-decoration-thickness: 0.2rem;
+}
+
+.artworks {
+  height: fit-content;
+  position: fixed;
+  z-index: 100;
+  transform: rotate(-90deg);
+  top: 50%;
+}
+
+.artworks .artworks-text {
+  display: grid;
+  align-items: center;
+  height: 100%;
+}
+
+.artworks .artworks-text p {
+  width: fit-content;
+  height: auto;
+  z-index: 0;
+  font-family: "PPNeueMontrealMono-Bold";
+  color: #43C83E;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  line-height: 0rem;
+  font-feature-settings: normal;
+  position: relative;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+.artworks a:hover {
+  text-decoration: line-through;
+  text-decoration-color: #43C83E;
+  text-decoration-thickness: 0.2rem;
+}
+
+.essays {
+  height: fit-content;
+  position: fixed;
+  z-index: 100;
+  transform: rotate(-90deg);
+  top: 50%;
+  right: 2vw;
+}
+
+.essays .essays-text {
+  display: grid;
+  align-items: center;
+  height: 100%;
+}
+
+.essays .essays-text p {
+  width: fit-content;
+  height: auto;
+  z-index: 0;
+  font-family: "PPNeueMontrealMono-Bold";
+  color: #5789E7;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  line-height: 0rem;
+  font-feature-settings: normal;
+  position: relative;
+}
+
+.essays a:hover {
+  text-decoration: line-through;
+  text-decoration-color: #5789E7;
+  text-decoration-thickness: 0.2rem;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: row;
+  gap: 15vw;
+  justify-content: center;
+  height: fit-content;
+  position: fixed;
+  bottom: 3vh;
+  z-index: 100;
+  margin: auto;
+  width: 100%;
+}
+
+.instagram .instagram-text {
+  display: flex;
+  place-items: center;
+  padding: 10px 0px;
+}
+
+.instagram .instagram-text p {
+  width: fit-content;
+  height: auto;
+  z-index: 0;
+  font-family: "PPNeueMontrealMono-Bold";
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  line-height: 0rem;
+  font-feature-settings: normal;
+  position: relative;
+}
+
+.instagram a:hover {
+  text-decoration: line-through;
+  text-decoration-color: #fff;
+  text-decoration-thickness: 0.2rem;
+}
+
+section.all-projects {
+  height: auto;
+  width: 100vw;
+  display: block;
+  overflow-y: visible;
+  box-sizing: border-box;
+}
+
+section.all-projects .all-projects-cont {
+  display: flex;
+  flex-direction: row; 
+  overflow-x: scroll; 
+  margin: 0;
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  -webkit-scroll-snap-type: x mandatory;
+  -webkit-transform: translate3d(0, 0, 0); 
+  transform: translate3d(0, 0, 0);
+}
+
+section.all-projects .project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+  -webkit-scroll-snap-align: start;
+  flex-shrink: 0;
+  margin-right: 0 !important;
+}
+
+section.all-projects .project .project-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+section.all-projects .project img {
+  width: auto;
+  height: 60vh;
+  object-fit: contain;
+  z-index: 0;
+  position: relative;
+}
+
+.description {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.description-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 0vh;
+  width: 90%;
+  max-width: 40vw;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  place-items: left;
+}
+
+.description p{
+  font-family: "PPNeueMontrealMono-Light";
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0em;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-feature-settings: normal;
+  position: relative;
+}
+
+.description a{
+  font-family: "PPNeueMontrealMono-Light";
+  color: #43C83E;
+  font-size: 0.8rem;
+  letter-spacing: 0em;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-feature-settings: normal;
+  position: relative;
+}
+
+section.main-cover {
+  height: 100vh;
+  width: 100%;
+  display: block;
+  overflow-y: visible;
+  box-sizing: border-box;
+  padding-top: 5vh;
+}
+
+section.main-cover .main-cover-cont {
+  display: flex;
+  flex-direction: column;  
+  gap: 3vh;
+  width: 100%;
+  margin: 0;
+  height: fit-content;
+  position: relative;
+  align-items: center;
+}
+
+section.main-cover .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+section.main-cover .project .project-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+section.main-cover .project img {
+  max-width: 60%;
+  max-height: 60%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  z-index: 0;
+  position: relative;
+  filter: opacity(40%);
+}
+
+section.main-cover .project .project-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+section.main-cover .project .project-text h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "PPNeueMontrealMono-Bold";
+  color: #43C83E;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-align: center;
+  line-height: 2rem;
+  font-feature-settings: normal;
+  z-index: 100;
+}
+
+a:hover, a:hover * {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+  text-decoration-skip-ink: none;
+  -webkit-text-decoration: line-through;
+  -webkit-text-decoration-thickness: 0.2rem;
+  -webkit-text-decoration-skip: none;
+}
