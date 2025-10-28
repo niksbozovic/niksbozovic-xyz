@@ -4,8 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>You were all stars</title>
-	<link rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
-</head>
+	<link id="desktop" rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
+	<script>
+	function isMobile() {
+	    return window.matchMedia("(max-width: 768px)").matches;
+	}
+
+	if (isMobile()) {
+	    console.log("mobile");
+	    document.getElementById("desktop").href = './individual-artworks-style-mobile.css'
+	} else {
+	    console.log("desktop");
+	}
+	</script></head>
 <body>
 	<section class="menu">
 		<div class="home">

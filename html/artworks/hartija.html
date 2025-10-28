@@ -4,7 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hartija</title>
-	<link rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
+	<link id="desktop" rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
+	<script>
+	function isMobile() {
+	    return window.matchMedia("(max-width: 768px)").matches;
+	}
+
+	if (isMobile()) {
+	    console.log("mobile");
+	    document.getElementById("desktop").href = './individual-artworks-style-mobile.css'
+	} else {
+	    console.log("desktop");
+	}
+	</script>
 </head>
 <body>
 	<section class="menu">
@@ -41,7 +53,7 @@
 		<div class="main-cover-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hartija/hartija-1.jpg">
+				<img src="../../img/hartija/hartija-1.jpeg">
 				<div class="project-text">
 					<h1>HARTIJA (2023-24)</h1>
 				</div>
@@ -60,27 +72,27 @@
 		<div class="all-projects-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hartija/hartija-4.jpg">
+				<img src="../../img/hartija/hartija-4.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hartija/hartija-5.jpg">
+				<img src="../../img/hartija/hartija-5.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hartija/hartija-2.jpg">
+				<img src="../../img/hartija/hartija-2.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hartija/hartija-3.jpg">
+				<img src="../../img/hartija/hartija-3.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hartija/hartija-6.jpg">
+				<img src="../../img/hartija/hartija-6.jpeg">
 			</div>
 		</div>
 	</section>	

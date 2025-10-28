@@ -4,7 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Niks Božović</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link id="desktop" rel="stylesheet" type="text/css" href="./style.css">
+	<script>
+	function isMobile() {
+	    return window.matchMedia("(max-width: 768px)").matches;
+	}
+
+	if (isMobile()) {
+	    console.log("mobile");
+	    document.getElementById("desktop").href = './style-mobile.css'
+	} else {
+	    console.log("desktop");
+	}
+	</script>
 </head>
 <body>
 	<section class="menu">

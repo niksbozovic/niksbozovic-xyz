@@ -190,21 +190,22 @@ a:hover {
 
 .description {
   position: relative;
-  height: fit-content;
+  height: auto;
   width: 100vw;
-  display: grid;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
-  padding: 20vh 5vw 20vh 5vw;
+  padding: 15vh 0;
 }
 
 .description-cont {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0vh;
-  width: 90%;
+  width: 100%;
   max-width: 40vw;
   margin: 0 auto;
-  height: fit-content;
+  height: auto;
   position: relative;
   place-items: left;
 }
@@ -212,7 +213,7 @@ a:hover {
 .description p{
   font-family: "PPNeueMontrealMono-Light";
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 0em;
   text-align: justify;
   line-height: 1.5rem;
@@ -223,7 +224,7 @@ a:hover {
 .description a{
   font-family: "PPNeueMontrealMono-Light";
   color: #43C83E;
-  font-size: .7rem;
+  font-size: 0.8rem;
   letter-spacing: 0em;
   text-align: justify;
   line-height: 1.5rem;

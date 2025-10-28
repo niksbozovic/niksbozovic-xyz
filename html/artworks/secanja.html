@@ -4,8 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sećanja</title>
-	<link rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
-</head>
+	<link id="desktop" rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
+	<script>
+	function isMobile() {
+	    return window.matchMedia("(max-width: 768px)").matches;
+	}
+
+	if (isMobile()) {
+	    console.log("mobile");
+	    document.getElementById("desktop").href = './individual-artworks-style-mobile.css'
+	} else {
+	    console.log("desktop");
+	}
+	</script></head>
 <body>
 	<section class="menu">
 		<div class="home">
@@ -45,7 +56,7 @@
 		<div class="main-cover-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/secanja/secanja-fanzini-1.jpg">
+				<img src="../../img/secanja/secanja-fanzini-1.jpeg">
 				<div class="project-text">
 					<h1>SEĆANJA (2025)</h1>
 				</div>
@@ -63,62 +74,22 @@
 		<div class="all-projects-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/secanja/herceg-novi/herceg-novi-1.jpg">
+				<img src="../../img/secanja/herceg-novi/herceg-novi-1.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/secanja/herceg-novi/herceg-novi-2.jpg">
+				<img src="../../img/secanja/herceg-novi/herceg-novi-2.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/secanja/herceg-novi/herceg-novi-3.jpg">
+				<img src="../../img/secanja/herceg-novi/herceg-novi-3.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/secanja/herceg-novi/herceg-novi-4.jpg">
-			</div>
-		</div>
-	</section>	
-
-	<div class="description">
-		<div class="description-cont">
-			<p>Herceg Novi, 1968. Based on the tiny details, I was able to put together a narrative of nostalgia to a young love between Milan and Radmila, about the card games in which Sloba always won, the alcohol they drank from canisters.</p>
-		</div>
-	</div>
-
-	<section class="all-projects">
-		<div class="all-projects-cont">
-		<div class="project">
-			<div class="project-cont">
-				<img src="../../img/secanja/zrenjanin/zrenjanin-1.jpg">
-			</div>
-		</div>
-		<div class="project">
-			<div class="project-cont">
-				<img src="../../img/secanja/zrenjanin/zrenjanin-2.jpg">
-			</div>
-		</div>
-		<div class="project">
-			<div class="project-cont">
-				<img src="../../img/secanja/zrenjanin/zrenjanin-3.jpg">
-			</div>
-		</div>
-		<div class="project">
-			<div class="project-cont">
-				<img src="../../img/secanja/zrenjanin/zrenjanin-4.jpg">
-			</div>
-		</div>
-		<div class="project">
-			<div class="project-cont">
-				<img src="../../img/secanja/zrenjanin/zrenjanin-5.jpg">
-			</div>
-		</div>
-		<div class="project">
-			<div class="project-cont">
-				<img src="../../img/secanja/zrenjanin/zrenjanin-6.jpg">
+				<img src="../../img/secanja/herceg-novi/herceg-novi-4.jpeg">
 			</div>
 		</div>
 	</section>	
@@ -133,17 +104,57 @@
 		<div class="all-projects-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/secanja/secanja-fanzini-2.jpg">
+				<img src="../../img/secanja/zrenjanin/zrenjanin-1.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/secanja/secanja-fanzini-3.jpg">
+				<img src="../../img/secanja/zrenjanin/zrenjanin-2.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/secanja/secanja-fanzini-4.jpg">
+				<img src="../../img/secanja/zrenjanin/zrenjanin-3.jpeg">
+			</div>
+		</div>
+		<div class="project">
+			<div class="project-cont">
+				<img src="../../img/secanja/zrenjanin/zrenjanin-4.jpeg">
+			</div>
+		</div>
+		<div class="project">
+			<div class="project-cont">
+				<img src="../../img/secanja/zrenjanin/zrenjanin-5.jpeg">
+			</div>
+		</div>
+		<div class="project">
+			<div class="project-cont">
+				<img src="../../img/secanja/zrenjanin/zrenjanin-6.jpeg">
+			</div>
+		</div>
+	</section>	
+
+	<div class="description">
+		<div class="description-cont">
+			<p>Herceg Novi, 1968. Based on the tiny details, I was able to put together a narrative of nostalgia to a young love between Milan and Radmila, about the card games in which Sloba always won, the alcohol they drank from canisters.</p>
+		</div>
+	</div>
+
+	<section class="all-projects">
+		<div class="all-projects-cont">
+		<div class="project">
+			<div class="project-cont">
+				<img src="../../img/secanja/secanja-fanzini-2.jpeg">
+			</div>
+		</div>
+		<div class="project">
+			<div class="project-cont">
+				<img src="../../img/secanja/secanja-fanzini-3.jpeg">
+			</div>
+		</div>
+		<div class="project">
+			<div class="project-cont">
+				<img src="../../img/secanja/secanja-fanzini-4.jpeg">
 			</div>
 		</div>
 	</section>	

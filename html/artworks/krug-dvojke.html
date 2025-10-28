@@ -4,8 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Krug Dvojke</title>
-	<link rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
-</head>
+	<link id="desktop" rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
+	<script>
+	function isMobile() {
+	    return window.matchMedia("(max-width: 768px)").matches;
+	}
+
+	if (isMobile()) {
+	    console.log("mobile");
+	    document.getElementById("desktop").href = './individual-artworks-style-mobile.css'
+	} else {
+	    console.log("desktop");
+	}
+	</script></head>
 <body>
 	<section class="menu">
 		<div class="home">
@@ -45,7 +56,7 @@
 		<div class="main-cover-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-6.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-6.jpeg">
 				<div class="project-text">
 					<h1>KRUG DVOJKE (2023)</h1>
 				</div>
@@ -63,22 +74,22 @@
 		<div class="all-projects-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-2.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-2.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-7.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-7.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-3.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-3.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-8.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-8.jpeg">
 			</div>
 		</div>
 	</section>
@@ -94,27 +105,27 @@
 		<div class="all-projects-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-4.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-4.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-5.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-5.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-6.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-6.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-9.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-9.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-10.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-10.jpeg">
 			</div>
 		</div>
 	</section>

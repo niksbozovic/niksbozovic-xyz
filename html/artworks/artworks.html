@@ -4,7 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Artworks</title>
-	<link rel="stylesheet" type="text/css" href="./artworks-style.css">
+	<link id="desktop" rel="stylesheet" type="text/css" href="./artworks-style.css">
+	<script>
+	function isMobile() {
+	    return window.matchMedia("(max-width: 768px)").matches;
+	}
+
+	if (isMobile()) {
+	    console.log("mobile");
+	    document.getElementById("desktop").href = './artworks-style-mobile.css'
+	} else {
+	    console.log("desktop");
+	}
+	</script>
 </head>
 <body>
 	<section class="menu">
@@ -45,7 +57,7 @@
 		<div class="all-projects-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/secanja/secanja-fanzini-1.jpg">
+				<img src="../../img/secanja/secanja-fanzini-1.jpeg">
 			</div>
 			<div class="project-text">
 				<a href="./secanja.html"><h1>SEĆANJA (2025)</h1>
@@ -54,7 +66,7 @@
 
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hartija/hartija-1.jpg">
+				<img src="../../img/hartija/hartija-1.jpeg">
 			</div>
 			<div class="project-text">
 				<a href="./hartija.html"><h1>HARTIJA (2023-24)</h1>
@@ -63,7 +75,7 @@
 
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/overgrown/overgrown-fotke-proizvoda-2.jpg">
+				<img src="../../img/overgrown/overgrown-fotke-proizvoda-2.jpeg">
 			</div>
 			<div class="project-text">
 				<a href="./overgrown.html"><h1>OVERGROWN (2024)</h1>
@@ -81,7 +93,7 @@
 
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/krug-dvojke/krug-dvojke-6.jpg">
+				<img src="../../img/krug-dvojke/krug-dvojke-6.jpeg">
 			</div>
 			<div class="project-text">
 				<a href="./krug-dvojke.html"><h1>KRUG DVOJKE (2023)</h1>
@@ -90,7 +102,7 @@
 
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hyperorganism/hyperorganism-2.jpg">
+				<img src="../../img/hyperorganism/hyperorganism-2.jpeg">
 			</div>
 			<div class="project-text">
 				<a href="./hyperorganism.html"><h1>HYPERORGANISM (2025)</h1>

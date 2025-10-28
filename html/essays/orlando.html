@@ -5,6 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Am I also your Orlando?</title>
 	<link rel="stylesheet" type="text/css" href="./individual-essays.css">
+	<link id="desktop" rel="stylesheet" type="text/css" href="./individual-sessays.css">
+	<script>
+	function isMobile() {
+	    return window.matchMedia("(max-width: 768px)").matches;
+	}
+
+	if (isMobile()) {
+	    console.log("mobile");
+	    document.getElementById("desktop").href = './individual-essays-mobile.css'
+	} else {
+	    console.log("desktop");
+	}
+	</script>
 </head>
 <body>
 	<section class="menu">

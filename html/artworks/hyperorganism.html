@@ -4,8 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hyperorganism</title>
-	<link rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
-</head>
+	<link id="desktop" rel="stylesheet" type="text/css" href="./individual-artworks-style.css">
+	<script>
+	function isMobile() {
+	    return window.matchMedia("(max-width: 768px)").matches;
+	}
+
+	if (isMobile()) {
+	    console.log("mobile");
+	    document.getElementById("desktop").href = './individual-artworks-style-mobile.css'
+	} else {
+	    console.log("desktop");
+	}
+	</script></head>
 <body>
 	<section class="menu">
 		<div class="home">
@@ -45,7 +56,7 @@
 		<div class="main-cover-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hyperorganism/hyperorganism-2.jpg">
+				<img src="../../img/hyperorganism/hyperorganism-2.jpeg">
 				<div class="project-text">
 					<h1>HYPERORGANISM (2025)</h1>
 				</div>
@@ -64,17 +75,17 @@
 		<div class="all-projects-cont">
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hyperorganism/hyperorganism-1.jpg">
+				<img src="../../img/hyperorganism/hyperorganism-1.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hyperorganism/hyperorganism-3.jpg">
+				<img src="../../img/hyperorganism/hyperorganism-3.jpeg">
 			</div>
 		</div>
 		<div class="project">
 			<div class="project-cont">
-				<img src="../../img/hyperorganism/hyperorganism-4.jpg">
+				<img src="../../img/hyperorganism/hyperorganism-4.jpeg">
 			</div>
 		</div>
 	</section>
