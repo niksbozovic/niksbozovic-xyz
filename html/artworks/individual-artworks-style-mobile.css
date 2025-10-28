@@ -80,8 +80,8 @@ a:hover {
   position: fixed;
   z-index: 100;
   transform: rotate(-90deg);
-  top: 48vh;
-  left: -3vw;
+  top: 50vh;
+  left: 0vw;
 }
 
 .artworks .artworks-text {
