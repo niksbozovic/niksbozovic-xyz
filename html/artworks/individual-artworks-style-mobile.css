@@ -79,9 +79,10 @@ a:hover {
   height: fit-content;
   position: fixed;
   z-index: 100;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 50% 0;
   top: 50vh;
+  left: -6vw;
 }
 
 .artworks .artworks-text {
@@ -113,13 +114,13 @@ a:hover {
 }
 
 .essays {
-  height: fit-content;
+  height: 0vh;
   position: fixed;
   z-index: 100;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
+  transform-origin: 50% 0; 
+  transform: rotate(-90deg) translateY(-50%); 
   top: 50vh;
-  right: 0vw;
+  right: 3vw;
 }
 
 .essays .essays-text {
@@ -251,7 +252,7 @@ section.all-projects .project img {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 15vh 0;
+  padding: 15vh 10vw;
 }
 
 .description-cont {

@@ -83,8 +83,9 @@ a:hover {
   position: fixed;
   z-index: 100;
   transform: rotate(-90deg);
-  transform-origin: 0 0;
-  top: 50%;
+  transform-origin: 50% 0;
+  top: 50vh;
+  left: 2vw;
 }
 
 .artworks .artworks-text {
@@ -119,9 +120,9 @@ a:hover {
   height: fit-content;
   position: fixed;
   z-index: 100;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
-  top: 50%;
+  transform-origin: 50% 0; 
+  transform: rotate(-90deg) translateY(-100%); 
+  top: 50vh;
   right: 2vw;
 }
 
@@ -214,7 +215,7 @@ a:hover {
 .description p{
   font-family: "PPNeueMontrealMono-Light";
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 0em;
   text-align: justify;
   line-height: 2rem;
@@ -225,7 +226,7 @@ a:hover {
 .description a{
   font-family: "PPNeueMontrealMono-Light";
   color: #43C83E;
-  font-size: .7rem;
+  font-size: 0.8rem;
   letter-spacing: 0em;
   text-align: justify;
   line-height: 2rem;

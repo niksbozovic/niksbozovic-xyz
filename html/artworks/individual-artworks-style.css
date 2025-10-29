@@ -80,8 +80,9 @@ a:hover {
   position: fixed;
   z-index: 100;
   transform: rotate(-90deg);
-  transform-origin: 0 0;
-  top: 50%;
+  transform-origin: 50% 0;
+  top: 50vh;
+  left: 2vw;
 }
 
 .artworks .artworks-text {
@@ -116,9 +117,9 @@ a:hover {
   height: fit-content;
   position: fixed;
   z-index: 100;
-  transform-origin: 100% 0; 
-  transform: rotate(-90deg) translateY(-100%);  
-  top: 50%;
+  transform-origin: 50% 0; 
+  transform: rotate(-90deg) translateY(-100%); 
+  top: 50vh;
   right: 2vw;
 }
 
