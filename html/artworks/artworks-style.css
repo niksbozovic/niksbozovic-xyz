@@ -83,6 +83,7 @@ a:hover {
   position: fixed;
   z-index: 100;
   transform: rotate(-90deg);
+  transform-origin: 0 0;
   top: 50%;
 }
 
@@ -119,6 +120,7 @@ a:hover {
   position: fixed;
   z-index: 100;
   transform: rotate(-90deg);
+  transform-origin: 0 0;
   top: 50%;
   right: 2vw;
 }
